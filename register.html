@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account | Nova Mart</title>
+  <meta name="description" content="Join Nova Mart today to unlock fast checkout, order tracking, exclusive discounts, and personalized recommendations.">
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body style="background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);">
+
+  
+  <div id="site-preloader" class="site-preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo">
+        <i class="fa-solid fa-bolt preloader-bolt"></i>
+        <span class="preloader-title">Nova Mart</span>
+      </div>
+      <div class="preloader-spinner-wrapper">
+        <div class="preloader-spinner"></div>
+      </div>
+      <div class="preloader-bar-container">
+        <div class="preloader-bar"></div>
+      </div>
+      <p class="preloader-text">Loading store...</p>
+    </div>
+  </div>
+
+  
+  <header class="header-main" style="background: transparent; border: none;">
+    <div class="container-custom">
+      <div class="header-wrapper" style="justify-content: center; height: 90px;">
+        <a href="index.html" class="brand-logo" style="font-size: 2.2rem;">
+          <i class="fa-solid fa-bolt"></i> Nova Mart
+        </a>
+      </div>
+    </div>
+  </header>
+
+  
+  <main class="auth-page-wrapper">
+    <div class="auth-card">
+      <div class="auth-header">
+        <h2>Create Account</h2>
+        <p style="color: var(--clr-gray-600); font-size: 0.9rem; margin-top: 0.3rem;">This demo does not create or store customer accounts.</p>
+      </div>
+
+      <form id="register-form">
+        
+        <div class="form-group">
+          <label>Full Name *</label>
+          <div class="input-with-icon">
+            <i class="fa-regular fa-user"></i>
+            <input type="text" placeholder="John Doe" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Email Address *</label>
+          <div class="input-with-icon">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" placeholder="name@example.com" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Password *</label>
+          <div class="input-with-icon">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="reg-password" placeholder="Create strong password" required>
+          </div>
+          
+          <div class="strength-meter">
+            <div class="strength-bar"></div>
+          </div>
+          <span style="font-size: 0.75rem; color: var(--clr-gray-500); margin-top: 0.25rem; display: block;">
+            Include uppercase, numbers & minimum 6 characters.
+          </span>
+        </div>
+
+        <div class="form-group">
+          <label>Confirm Password *</label>
+          <div class="input-with-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+            <input type="password" placeholder="Repeat your password" required>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-custom btn-primary-custom" style="width: 100%; justify-content: center; font-size: 1.05rem; padding: 0.85rem;">
+          Preview Registration <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+      </form>
+
+      <p style="text-align: center; font-size: 0.9rem; color: var(--clr-gray-600); margin-top: 2rem;">
+        Already have an account? <a href="login.html" style="color: var(--clr-primary); font-weight: 700;">Sign In</a>
+      </p>
+    </div>
+  </main>
+
+  
+  <div class="toast-container"></div>
+
+  
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

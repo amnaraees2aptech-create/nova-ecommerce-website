@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova Mart | Everything you need. One place.</title>
+  <meta name="description"
+    content="Discover premium electronics, fashion, home decor, and beauty essentials on Nova Mart with fast delivery and exclusive deals.">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  
+   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap-grid.min.css">
+
+  
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+  
+  <div id="site-preloader" class="site-preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo">
+        <i class="fa-solid fa-bolt preloader-bolt"></i>
+        <span class="preloader-title">Nova Mart</span>
+      </div>
+      <div class="preloader-spinner-wrapper">
+        <div class="preloader-spinner"></div>
+      </div>
+      <div class="preloader-bar-container">
+        <div class="preloader-bar"></div>
+      </div>
+      <p class="preloader-text">Loading store...</p>
+    </div>
+  </div>
+
+  
+  <div class="announcement-bar">
+    <div class="container-custom">
+      <span>STOREFRONT DEMO:</span> Explore the Nova Mart sample catalog and shopping experience.
+    </div>
+  </div>
+
+  
+  <header class="header-main">
+    <div class="container-custom">
+      <div class="header-wrapper">
+
+        
+        <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        
+        <a href="index.html" class="brand-logo">
+          <i class="fa-solid fa-bolt"></i> Nova Mart
+        </a>
+
+        
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="shop.html" class="nav-link">Shop</a>
+          <a href="shop.html?category=Electronics" class="nav-link">Electronics</a>
+          <a href="shop.html?category=Fashion" class="nav-link">Fashion</a>
+          <a href="shop.html?category=Home%20%26%20Living" class="nav-link">Home & Living</a>
+          <a href="shop.html?category=Beauty" class="nav-link">Beauty</a>
+        </nav>
+
+        
+        <div class="header-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search products, brands, categories...">
+        </div>
+
+        
+        <div class="header-actions">
+          <a href="wishlist.html" class="action-icon-btn" title="Wishlist" aria-label="Wishlist">
+            <i class="fa-regular fa-heart"></i>
+            <span class="badge-count wishlist-badge">0</span>
+          </a>
+          <a href="cart.html" class="action-icon-btn" title="Shopping Cart" aria-label="Shopping Cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="badge-count cart-badge">0</span>
+          </a>
+          <a href="profile.html" class="action-icon-btn" title="User Profile" aria-label="Profile">
+            <i class="fa-regular fa-user"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo">
+        <i class="fa-solid fa-bolt"></i> Nova Mart
+      </a>
+      <button class="drawer-close-btn" aria-label="Close Drawer" style="font-size: 1.2rem; color: var(--clr-dark);">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="header-search" style="display: block;">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="Search products...">
+    </div>
+
+    <div class="mobile-menu-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop All Products</a>
+      <a href="shop.html?category=Electronics">Electronics</a>
+      <a href="shop.html?category=Fashion">Fashion</a>
+      <a href="shop.html?category=Home%20%26%20Living">Home & Living</a>
+      <a href="shop.html?category=Beauty">Beauty</a>
+      <a href="wishlist.html">My Wishlist</a>
+      <a href="cart.html">Shopping Cart</a>
+      <a href="profile.html">My Account</a>
+    </div>
+  </aside>
+
+  
+  <section class="hero-section">
+    <div class="container-custom">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="hero-badge"><i class="fa-solid fa-sparkles"></i> New Generation Store</span>
+          <h1 class="hero-title">Shop Smarter. <br><span>Live Better.</span></h1>
+          <p class="hero-subtitle">Everything you need. One place. Discover handpicked electronics, premium fashion,
+            home decor, and luxury beauty items engineered for everyday perfection.</p>
+          <div class="hero-cta">
+            <a href="shop.html" class="btn-custom btn-primary-custom">
+              <i class="fa-solid fa-cart-shopping"></i> Shop Now
+            </a>
+            <a href="#deals" class="btn-custom btn-outline-custom">
+              <i class="fa-solid fa-fire"></i> Explore Deals
+            </a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <img src="assets/images/banners/hero-banner.jpg" alt="Nova Mart Hero Lifestyle Shopping">
+          <div class="hero-floating-card">
+            <div class="icon-box">
+              <i class="fa-solid fa-shield-check"></i>
+            </div>
+            <div>
+              <h5 style="font-size: 0.9rem; font-weight: 700; color: var(--clr-dark); margin: 0;">Featured Products</h5>
+              <span style="font-size: 0.78rem; color: var(--clr-gray-600);">Browse the sample catalog</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="features-section">
+    <div class="container-custom">
+      <div class="features-grid">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <div class="feature-text">
+            <h4>Free Worldwide Shipping</h4>
+            <p>On all orders over $100</p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fa-solid fa-rotate-left"></i></div>
+          <div class="feature-text">
+            <h4>30 Days Money Back</h4>
+            <p>Hassle-free return policy</p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fa-solid fa-lock"></i></div>
+          <div class="feature-text">
+            <h4>100% Secure Payment</h4>
+            <p>Demo checkout</p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+          <div class="feature-text">
+            <h4>Storefront Preview</h4>
+            <p>Explore the sample shopping experience</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="categories-section">
+    <div class="container-custom">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Explore Top Categories</h2>
+          <p class="section-subtitle">Find what you're looking for by browsing our curated collections</p>
+        </div>
+        <a href="shop.html" class="view-all-link">View All Categories <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="categories-grid">
+        
+        <a href="shop.html?category=Electronics" class="category-card">
+          <img src="assets/images/categories/electronics.jpg" alt="Electronics" class="category-img">
+          <div class="category-content">
+            <div class="category-icon"><i class="fa-solid fa-laptop"></i></div>
+            <h3 class="category-title">Electronics</h3>
+            <span class="category-count">6 Products Available</span>
+          </div>
+        </a>
+
+        
+        <a href="shop.html?category=Fashion" class="category-card">
+          <img src="assets/images/categories/fashion.jpg" alt="Fashion" class="category-img">
+          <div class="category-content">
+            <div class="category-icon"><i class="fa-solid fa-shirt"></i></div>
+            <h3 class="category-title">Fashion</h3>
+            <span class="category-count">5 Products Available</span>
+          </div>
+        </a>
+
+        
+        <a href="shop.html?category=Home%20%26%20Living" class="category-card">
+          <img src="assets/images/categories/home-living.jpg" alt="Home Decor" class="category-img">
+          <div class="category-content">
+            <div class="category-icon"><i class="fa-solid fa-couch"></i></div>
+            <h3 class="category-title">Home & Living</h3>
+            <span class="category-count">4 Products Available</span>
+          </div>
+        </a>
+
+        
+        <a href="shop.html?category=Beauty" class="category-card">
+          <img src="assets/images/categories/beauty.jpg" alt="Beauty" class="category-img">
+          <div class="category-content">
+            <div class="category-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h3 class="category-title">Beauty</h3>
+            <span class="category-count">4 Products Available</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="products-section">
+    <div class="container-custom">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Featured Products</h2>
+          <p class="section-subtitle">Top rated products handpicked for exceptional quality and style</p>
+        </div>
+        <a href="shop.html" class="view-all-link">Browse Full Shop <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="products-grid" id="featured-products-grid">
+        
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="deals-section" id="deals">
+    <div class="container-custom">
+      <div class="deals-card">
+        <div class="deals-info">
+          <span class="badge-tag"><i class="fa-solid fa-clock"></i> Limited Time Offer</span>
+          <h2 class="deals-title">Today's Best Deals</h2>
+          <p class="deals-description">Grab up to 40% OFF on premium audio equipment, smartwatches, and fashion jackets.
+            Offer ends soon!</p>
+
+          
+          <div class="timer-wrapper">
+            <div class="timer-block">
+              <span class="time-num" id="timer-hours">14</span>
+              <span class="time-lbl">Hours</span>
+            </div>
+            <div style="font-size: 1.5rem; font-weight: 800; color: var(--clr-accent);">:</div>
+            <div class="timer-block">
+              <span class="time-num" id="timer-mins">45</span>
+              <span class="time-lbl">Mins</span>
+            </div>
+            <div style="font-size: 1.5rem; font-weight: 800; color: var(--clr-accent);">:</div>
+            <div class="timer-block">
+              <span class="time-num" id="timer-secs">20</span>
+              <span class="time-lbl">Secs</span>
+            </div>
+          </div>
+
+          <a href="shop.html?deal=true" class="btn-custom btn-primary-custom">
+            <i class="fa-solid fa-bag-shopping"></i> Claim Discount Now
+          </a>
+        </div>
+
+        <div style="position: relative; border-radius: var(--radius-xl); overflow: hidden;">
+          <img src="assets/images/banners/deal-banner.jpg" alt="Apex Headphones Deal" style="width: 100%; height: 380px; object-fit: cover;">
+          <div
+            style="position: absolute; top: 1.5rem; right: 1.5rem; background: var(--clr-danger); color: var(--clr-white); font-weight: 800; font-size: 1.1rem; padding: 0.6rem 1.2rem; border-radius: var(--radius-full); box-shadow: var(--shadow-md);">
+            25% OFF
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <div class="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close Quick View"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  
+  <div class="toast-container"></div>
+
+  
+  <footer class="footer-main">
+    <div class="container-custom">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="color: var(--clr-white); margin-bottom: 1rem;">
+            <i class="fa-solid fa-bolt"></i> Nova Mart
+          </a>
+          <p style="font-size: 0.9rem; margin-bottom: 1.25rem;">"Everything you need. One place." A sample storefront showcasing products and shopping interface features.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <div class="footer-links">
+            <a href="shop.html">All Products</a>
+            <a href="shop.html?category=Electronics">Electronics</a>
+            <a href="shop.html?category=Fashion">Fashion</a>
+            <a href="shop.html?category=Home%20%26%20Living">Home & Living</a>
+            <a href="shop.html?category=Beauty">Beauty</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nova Mart. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

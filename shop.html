@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Catalog | Nova Mart</title>
+  <meta name="description" content="Browse our complete catalog of electronics, fashion, home goods, and beauty products. Filter by category, price, and customer rating.">
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap-grid.min.css">
+  
+  
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+  
+  <div id="site-preloader" class="site-preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo">
+        <i class="fa-solid fa-bolt preloader-bolt"></i>
+        <span class="preloader-title">Nova Mart</span>
+      </div>
+      <div class="preloader-spinner-wrapper">
+        <div class="preloader-spinner"></div>
+      </div>
+      <div class="preloader-bar-container">
+        <div class="preloader-bar"></div>
+      </div>
+      <p class="preloader-text">Loading store...</p>
+    </div>
+  </div>
+
+  
+  <div class="announcement-bar">
+    <div class="container-custom">
+      ⚡ <span>FLASH SALE:</span> Enjoy up to 40% OFF + Free Worldwide Shipping on orders over $100!
+    </div>
+  </div>
+
+  
+  <header class="header-main">
+    <div class="container-custom">
+      <div class="header-wrapper">
+        
+        <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <a href="index.html" class="brand-logo">
+          <i class="fa-solid fa-bolt"></i> Nova Mart
+        </a>
+
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="shop.html" class="nav-link active">Shop</a>
+          <a href="shop.html?category=Electronics" class="nav-link">Electronics</a>
+          <a href="shop.html?category=Fashion" class="nav-link">Fashion</a>
+          <a href="shop.html?category=Home%20%26%20Living" class="nav-link">Home & Living</a>
+          <a href="shop.html?category=Beauty" class="nav-link">Beauty</a>
+        </nav>
+
+        <div class="header-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search products, brands...">
+        </div>
+
+        <div class="header-actions">
+          <a href="wishlist.html" class="action-icon-btn" title="Wishlist">
+            <i class="fa-regular fa-heart"></i>
+            <span class="badge-count wishlist-badge">0</span>
+          </a>
+          <a href="cart.html" class="action-icon-btn" title="Shopping Cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="badge-count cart-badge">0</span>
+          </a>
+          <a href="profile.html" class="action-icon-btn" title="User Profile">
+            <i class="fa-regular fa-user"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo">
+        <i class="fa-solid fa-bolt"></i> Nova Mart
+      </a>
+      <button class="drawer-close-btn" aria-label="Close Drawer">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="mobile-menu-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop All Products</a>
+      <a href="shop.html?category=Electronics">Electronics</a>
+      <a href="shop.html?category=Fashion">Fashion</a>
+      <a href="shop.html?category=Home%20%26%20Living">Home & Living</a>
+      <a href="shop.html?category=Beauty">Beauty</a>
+      <a href="wishlist.html">My Wishlist</a>
+      <a href="cart.html">Shopping Cart</a>
+      <a href="profile.html">My Account</a>
+    </div>
+  </aside>
+
+  
+  <div style="background-color: var(--clr-primary-light); padding: 2.5rem 0; border-bottom: 1px solid var(--border-color);">
+    <div class="container-custom">
+      <h1 style="font-size: 2.25rem; font-weight: 800; color: var(--clr-dark); margin-bottom: 0.25rem;">Shop Products</h1>
+      <p style="color: var(--clr-gray-600); font-size: 0.95rem;">
+        <a href="index.html">Home</a> / <span style="color: var(--clr-primary); font-weight: 600;">Shop Catalog</span>
+      </p>
+    </div>
+  </div>
+
+  
+  <main class="shop-page-wrapper">
+    <div class="container-custom">
+      <div class="shop-layout">
+        
+        
+        <aside class="filter-sidebar">
+          <form id="filter-form">
+            
+            
+            <div class="filter-group">
+              <h3 class="filter-title">
+                <span>Categories</span>
+                <i class="fa-solid fa-layer-group" style="font-size: 0.9rem; color: var(--clr-primary);"></i>
+              </h3>
+              <div class="filter-options-list">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="category" value="Electronics"> Electronics
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="category" value="Fashion"> Fashion
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="category" value="Home & Living"> Home & Living
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="category" value="Beauty"> Beauty
+                </label>
+              </div>
+            </div>
+
+            
+            <div class="filter-group">
+              <h3 class="filter-title">
+                <span>Max Price</span>
+                <i class="fa-solid fa-dollar-sign" style="font-size: 0.9rem; color: var(--clr-primary);"></i>
+              </h3>
+              <div class="price-range-wrapper">
+                <input type="range" id="price-range" class="price-range-slider" min="20" max="1000" step="10" value="1000">
+                <div class="price-values">
+                  <span>$20</span>
+                  <span id="price-value" style="color: var(--clr-primary); font-weight: 800;">$1000</span>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="filter-group">
+              <h3 class="filter-title">
+                <span>Rating</span>
+                <i class="fa-solid fa-star" style="font-size: 0.9rem; color: var(--clr-accent);"></i>
+              </h3>
+              <div class="filter-options-list">
+                <label class="checkbox-label">
+                  <input type="radio" name="rating" value="4.5"> ★★★★☆ (4.5 & up)
+                </label>
+                <label class="checkbox-label">
+                  <input type="radio" name="rating" value="4.0"> ★★★★☆ (4.0 & up)
+                </label>
+                <label class="checkbox-label">
+                  <input type="radio" name="rating" value="0" checked> All Ratings
+                </label>
+              </div>
+            </div>
+
+            
+            <div class="filter-group">
+              <h3 class="filter-title">Availability</h3>
+              <label class="checkbox-label">
+                <input type="checkbox" id="instock-checkbox" checked> In Stock Only
+              </label>
+            </div>
+
+            <button type="button" class="btn-custom btn-outline-custom" style="width: 100%; font-size: 0.85rem;" onclick="resetFilters()">
+              <i class="fa-solid fa-arrow-rotate-left"></i> Reset Filters
+            </button>
+
+          </form>
+        </aside>
+
+        
+        <section>
+          
+          
+          <div class="shop-toolbar">
+            <span style="font-size: 0.95rem; color: var(--clr-gray-600);">
+              Showing <strong id="product-count" style="color: var(--clr-dark);">0</strong> products
+            </span>
+
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <label for="sort-select" style="font-size: 0.9rem; font-weight: 600; color: var(--clr-gray-700);">Sort By:</label>
+              <select id="sort-select" class="sort-select">
+                <option value="featured">Featured First</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="rating">Highest Rated</option>
+                <option value="discount">Biggest Discount</option>
+              </select>
+            </div>
+          </div>
+
+          
+          <div class="products-grid" id="shop-products-grid">
+            
+          </div>
+
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  
+  <div class="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  
+  <div class="toast-container"></div>
+
+  
+  <footer class="footer-main">
+    <div class="container-custom">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="color: var(--clr-white); margin-bottom: 1rem;">
+            <i class="fa-solid fa-bolt"></i> Nova Mart
+          </a>
+          <p style="font-size: 0.9rem; margin-bottom: 1.25rem;">"Everything you need. One place." A sample storefront showcasing products and shopping interface features.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <div class="footer-links">
+            <a href="shop.html">All Products</a>
+            <a href="shop.html?category=Electronics">Electronics</a>
+            <a href="shop.html?category=Fashion">Fashion</a>
+            <a href="shop.html?category=Home%20%26%20Living">Home & Living</a>
+            <a href="shop.html?category=Beauty">Beauty</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nova Mart. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
